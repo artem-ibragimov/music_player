@@ -69,7 +69,7 @@
 
 {#if !!trackName}
    <audio bind:this={audio} on:loadeddata={onMetaLoaded} on:timeupdate={onTimeUpdate}>
-      <source src={`${location.href}/static/music/${trackName}.mp3`} type="audio/mpeg" />
+      <source src={`${location.href}/music/${trackName}.mp3`} type="audio/mpeg" />
       Your browser does not support the audio element.
    </audio>
 {/if}
